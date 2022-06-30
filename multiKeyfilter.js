@@ -90,4 +90,13 @@ var items = [
   
   var filteredData = items.filter(item => searchItems.includes(item.key))
   
-  console.log(filteredData)
+//   console.log(filteredData)
+
+
+
+// const result = items.reduce((obj, cur) => ({...obj, [cur.key]: cur}), {})
+
+const result = items.reduce((obj, cur) => console.log('obj,cur :>> ', obj,cur), {})
+
+
+console.log('result :>> ', result);
